@@ -1,5 +1,8 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/wp-config.php';
+	
+	use const Carbon_Fields\DIR;
+	
+	require_once $_SERVER['DOCUMENT_ROOT'] . '/wp-config.php';
 $version = "9.12.1";
 if ( session_id() == '' ) {
 	session_start();
@@ -77,7 +80,7 @@ $config = array(
 	| with start and final /
 	|
 	*/
-	'upload_dir'       => '/wp-content/uploads/',
+	'upload_dir'       =>'/wp-content/uploads/',
 	/*
 	|--------------------------------------------------------------------------
 	| relative path from filemanager folder to upload folder
@@ -97,7 +100,7 @@ $config = array(
 	| DO NOT put inside upload folder
 	|
 	*/
-	'thumbs_base_path' => '../../../../../uploads/',
+	'thumbs_base_path' => '../../../../../uploads/rf-thumbnail/',
 
 
 	/*
