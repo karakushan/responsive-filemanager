@@ -2720,11 +2720,9 @@ class imageLib {
 		};
 
 		// *** Get extension / image type
-		if (function_exists('mime_content_type')){
-			$extension = mime_content_type($file);
-			$extension = fix_strtolower($extension);
-			$extension = str_replace('image/', '', $extension);
-
+		$extension = mime_content_type($file);
+		$extension = fix_strtolower($extension);
+		$extension = str_replace('image/', '', $extension);
 		switch ($extension)
 		{
 			case 'jpg':
@@ -2754,7 +2752,6 @@ class imageLib {
 		}
 
 		return $img;
-		}
 	}
 
 ## --------------------------------------------------------

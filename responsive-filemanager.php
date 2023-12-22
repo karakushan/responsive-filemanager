@@ -1,18 +1,18 @@
 <?php
 	/*
 	Plugin Name: Responsive Filemanager
-	Plugin URI: https://akismet.com/
-	Description: Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from spam</strong>. It keeps your site protected even while you sleep. To get started: 1) Click the "Activate" link to the left of this description, 2) <a href="https://akismet.com/get/">Sign up for an Akismet plan</a> to get an API key, and 3) Go to your Akismet configuration page, and save your API key.
-	Version: 3.2
-	Author: Automattic
-	Author URI: https://automattic.com/wordpress-plugins/
+	Plugin URI: https://github.com/karakushan/responsive-filemanager
+	Description: Данный плагин позволяет просматривать и редактировать файлы на сайте.
+	Version: 1.0.0
+	Author: Vitaliy Karakushan
+	Author URI: https://github.com/karakushan/
 	License: GPLv2 or later
 	Text Domain: responsive-filemanager
 	*/
 	
-	ini_set( 'error_reporting', E_ALL );
-	ini_set( 'display_errors', 1 );
-	ini_set( 'display_startup_errors', 1 );
+//	ini_set( 'error_reporting', E_ALL );
+//	ini_set( 'display_errors', 1 );
+//	ini_set( 'display_startup_errors', 1 );
 	
 	$upload_dir = wp_upload_dir();
 	
